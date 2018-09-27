@@ -1,0 +1,63 @@
+.main-navigation {
+	.menu-main-menu-container {
+		 #primary-menu {
+            text-align: center;
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
+			li {
+                padding: 0 15px;
+                display: inline;
+				a {
+					transition: color 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+					text-decoration: none;
+					text-transform: uppercase;
+					font-weight: bold;
+					letter-spacing: .075em;
+					display: inline-block;
+					line-height: 100px;
+				}
+			}
+		}
+	}
+}
+
+.current-menu-item {
+    color: $accent-color;
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}

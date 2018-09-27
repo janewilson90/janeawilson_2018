@@ -1,0 +1,90 @@
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.375rem;
+}
+
+h4 {
+    font-size: 1.125rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.875rem;
+}
+
+p {
+    font-size: 1.125rem;
+    font-weight: $font-weight-regular;
+    line-height: 1.8;
+}
+
+ul {
+    font-weight: $font-weight-regular;
+    font-size: 1.125rem;
+}
+
+blockquote {
+    display: block;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: #eee;
+    padding: 1.5em 0 0.5em;
+    margin: 1.5em 0;
+    position: relative;
+    p {
+        margin-left: 2em;
+        font-style: italic;
+    }
+}
+
+blockquote:before {
+    content: '\201C';
+    position: absolute;
+    top: 0em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 3rem;
+    height: 2rem;
+    color: $grey;
+    text-align: center;
+    font-size: 2em;
+}
+
+cite {
+    float: right;
+    margin-top: 2em;
+}
+
+// blockquote:after {
+//     content: "\2013 \2003" attr(cite);
+//     display: block;
+//     text-align: right;
+//     font-size: 0.875em;
+//     color: $accent-color;
+// }
+
+.font-light {
+    font-weight: $font-weight-light;
+}
+
+.font-regular {
+    font-weight: $font-weight-regular;
+}
+
+.font-heavy {
+    font-weight: $font-weight-heavy;
+}

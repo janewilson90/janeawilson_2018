@@ -1,0 +1,33 @@
+// colour scheme
+$accent-color: #b21667;
+$grey: #605856;
+$light-grey: #d0ccd0;
+$light-pink: #f6f2ff;
+$offwhite: #fbfcff;
+
+// colors
+$dark-grey: #333447;
+$chip-color: $accent-color;
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+$font-family: 'Lato', Helvetica, sans-serif;
+$font-weight-light: 100;
+$font-weight-regular: 200;
+$font-weight-heavy: 700;
+$font-height: 1.5;
+
+@mixin pill {
+    display: inline-block;
+    background: $chip-color;
+    padding: 0.25em;
+    border-radius: 32px;
+    font-size: 13px;
+    &.md-chip-hover:hover {
+        background: $light-pink;
+    }
+}
+
+@mixin responsive-img {
+    width: 100%;
+    height: auto;
+}

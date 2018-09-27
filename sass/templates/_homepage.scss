@@ -1,0 +1,134 @@
+#hero {
+    position: relative;
+    min-height: 640px;
+    height: 100vh;
+    text-align: center;
+}
+
+.home-header {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 36px;
+    -ms-transform: translate(0, -50%);
+    /* IE 9 */
+    -webkit-transform: translate(0, -50%);
+    /* Safari */
+    transform: translate(0, -50%);
+}
+
+.hero-text {
+    font-weight: 900;
+    font-size: 6rem;
+}
+
+.hero-helper {
+    font-weight: 400;
+    display: inline;
+}
+
+.hero-helper-content {
+    display: inline;
+    white-space: no-wrap;
+    overflow: hidden;
+    margin: 0 auto;
+    span {
+      position: absolute;
+      opacity: 0;
+      overflow: hidden;
+      animation: rotatewords 12s linear infinite 0s;
+    }
+  }
+  
+  .hero-helper-content span:nth-child(2) { 
+      animation-delay: 3s; 
+  }
+  .hero-helper-content span:nth-child(3) { 
+      animation-delay: 6s; 
+  }
+  .hero-helper-content span:nth-child(4) { 
+      animation-delay: 9s; 
+  }
+  
+  @keyframes rotatewords {
+      0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
+      8% { opacity: 1; height: 60px; }
+      19% { opacity: 1; height: 60px; }
+        25% { opacity: 0; height: 60px; }
+      100% { opacity: 0; }
+  }
+
+.hero-more {
+    margin-top: 5rem;
+}
+
+.hero-more {
+    a>span {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 46px;
+        height: 46px;
+        margin-left: -23px;
+        border: 1px solid #fff;
+        border-radius: 100%;
+        box-sizing: border-box;
+        &::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            content: '';
+            width: 16px;
+            height: 16px;
+            margin: -12px 0 0 -8px;
+            border-left: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            box-sizing: border-box;
+        }
+    }
+}
+
+#home-content {
+    padding: 100px 50px;
+    text-align: center;
+    width: 80%;
+    margin: 0px auto;
+    clear: both;
+    h2 {
+        margin: 0px 0px 30px 0px;
+    }
+}
+
+.skill-bar {
+    margin-top: 0.25em;
+    padding: 0.5em;
+    color: white;
+}
+
+#home-footer {
+    padding: 30px 0px;
+    text-align: center;
+    background: #ddd;
+}
+
+.ball {
+    pointer-events: none;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: gray;
+    animation: implode 1s ease-in-out;
+    animation-fill-mode: both;
+    opacity: .5;
+}
+
+@keyframes implode {
+    100% {
+        transform: scale(0)
+    }
+}

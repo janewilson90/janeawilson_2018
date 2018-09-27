@@ -1,0 +1,27 @@
+dl {
+    font-weight: 200;
+
+    dt {
+        float: left;
+        margin-right: 10%;
+        max-width: 40%;
+    }
+    dd {
+        margin-left: 50%;
+        margin-bottom: .5em;
+    }
+
+    dd::after {
+        content: " ";
+        display: block;
+        clear: left;
+    }
+}
+
+
+
+.featured-img {
+    img {
+        @include responsive-img;
+    }
+}
