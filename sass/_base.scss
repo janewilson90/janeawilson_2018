@@ -9,10 +9,11 @@ body {
     left: 0;
     top: 0;
     font-size: 100%;
+    background-color: $offwhite;
 }
 
 * {
     font-family: $font-family;
-    color: $dark-grey;
+    color: $grey;
     line-height: $font-height;
 }

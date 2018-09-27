@@ -1,13 +1,17 @@
 // colour scheme
-$accent-color: #b21667;
-$grey: #605856;
-$light-grey: #d0ccd0;
-$light-pink: #f6f2ff;
-$offwhite: #fbfcff;
+$accent-color: #BEE9E8;
+$grey: #2C3E50;
+$dark-pink: #70587C;
+$light-pink: #C8B8DB;
+$offwhite: #F9F4F5;
 
 // colors
-$dark-grey: #333447;
+$dark: $grey;
 $chip-color: $accent-color;
+
+$button-primary-color: $dark;
+$button-primary-bg: $light-pink;
+$button-primary-bdr: $light-pink;
 
 @import url(https://fonts.googleapis.com/css?family=Work+Sans);
 $font-family: 'Work Sans', sans-serif;
@@ -30,4 +34,31 @@ $font-height: 1.5;
 @mixin responsive-img {
     width: 100%;
     height: auto;
+}
+
+@mixin button {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    // text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+    &:hover {
+        color: #333;
+        border-color: #888;
+        outline: 0;
+    }
+    &:focus {
+        color: #333;
+        border-color: #888;
+        outline: 0;
+    }
 }
