@@ -48,7 +48,7 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="//cdn.jsdelivr.net/stickynavbar.js/1.3.2/jquery.stickyNavbar.min.js"></script>
 
-<link href="<?php echo get_template_directory_uri(); ?>/js/scripts.js">
+
 
 <?php wp_footer(); ?>
 
