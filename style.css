@@ -520,6 +520,9 @@ cite {
 .font-heavy {
   font-weight: 700; }
 
+#page-title:after {
+  content: '.'; }
+
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
@@ -843,6 +846,9 @@ form {
 
 .hidden-sm {
   display: none; }
+
+.fw500 {
+  font-weight: 500; }
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

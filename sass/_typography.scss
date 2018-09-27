@@ -88,3 +88,7 @@ cite {
 .font-heavy {
     font-weight: $font-weight-heavy;
 }
+
+#page-title:after {
+    content: '.';
+}
