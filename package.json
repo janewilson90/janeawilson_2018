@@ -1,0 +1,19 @@
+{
+  "name": "janeawilson_2018",
+  "version": "1.0.0",
+  "description": "personal website theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janewilson90/janeawilson_2018.git"
+  },
+  "author": "Jane Wilson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janewilson90/janeawilson_2018/issues"
+  },
+  "homepage": "https://github.com/janewilson90/janeawilson_2018#readme"
+}
