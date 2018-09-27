@@ -17,7 +17,7 @@ services:
        - db
      image: wordpress
      volumes:
-       - ./:/var/www/html/wp-content/themes/janeawil
+       - ./:/var/www/html/wp-content/themes/janeawilson_2018
      ports:
        - "8000:80"
      restart: always
