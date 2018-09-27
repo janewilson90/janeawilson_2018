@@ -83,9 +83,9 @@ input {
 
 .button.button-primary,
 button.button-primary {
-    color: #FFF;
-    background-color: #33C3F0;
-    border-color: #33C3F0;
+    color: $button-primary-color;
+    background-color: $button-primary-bg;
+    border-color: $button-primary-bdr;
 }
 
 input {
@@ -152,18 +152,18 @@ input {
 
 .button.button-secondary,
 button.button-secondary {
-    color: $offwhite;
+    color:$button-secondary-color;
     // background-color: #33C3F0;
-    border-color: $offwhite;
+    border-color: $button-secondary-bdr;
 }
 
 input {
     &[type="submit"].button-secondary,
     &[type="reset"].button-secondary,
     &[type="button"].button-secondary {
-        color: $offwhite;
+        color: $button-secondary-color;
         // background-color: #33C3F0;
-        border-color: $offwhite;
+        border-color: $button-secondary-bdr;
     }
 }
 

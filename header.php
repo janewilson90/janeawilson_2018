@@ -26,7 +26,7 @@
 
 	<header id="masthead" class="site-header">
 
-		<nav id="site-navigation" class="main-navigation">
+		<nav id="site-navigation" class="main-navigation container">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'janeawilson_2018' ); ?></button>
 			<?php
 			wp_nav_menu( array(

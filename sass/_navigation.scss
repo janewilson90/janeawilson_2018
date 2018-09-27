@@ -1,6 +1,9 @@
+.site-header {
+	background-color: $dark;
+}
+
 .main-navigation {
 	.menu-header-container {
-		background-color: $dark;
 		 #primary-menu {
             text-align: right;
             list-style: none;
@@ -62,10 +65,4 @@
 	}
 }
 
-.main-menu-cta {
-	@include button;
-	color: $button-primary-color;
-    background-color: $button-primary-bg;
-	border-color: $button-primary-bdr;
-}
 
