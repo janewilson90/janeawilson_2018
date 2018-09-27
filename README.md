@@ -1,3 +1,14 @@
+YOU'RE USING
+
+animate.css https://daneden.github.io/animate.css/
+morphext https://morphext.fyianlai.com/
+
+underscores for the base WP theme
+a Frankentheme of skeleton (everything which isn't grid) and simplegrid.io for the grid
+Skeleton http://getskeleton.com/
+Simplegrid.io http://simplegrid.io/
+
+
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
 _s
