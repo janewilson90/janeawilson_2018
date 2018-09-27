@@ -1,4 +1,6 @@
 $(function () {
-    $('.main-navigation').stickyNavbar();
+    // $('.main-navigation').stickyNavbar();
     console.log("herro");
+    
  });
+
