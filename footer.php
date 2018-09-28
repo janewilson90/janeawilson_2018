@@ -22,6 +22,23 @@
 
 			<section class="col-4">
 				<h3>Around the web</h3>
+				<ul class="social-media-links">
+					<li>
+						<a href="https://www.linkedin.com/in/janewilson90/" target="_blank">
+							<img src="<?php echo get_template_directory_uri();?>/assets/icons/linkedin.png" alt="Linkedin icon"/>
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/janewilson90" target="_blank">
+							<img src="<?php echo get_template_directory_uri();?>/assets/icons/twitter.png" alt="Twitter icon"/>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/janewilson90/" target="_blank">
+							<img src="<?php echo get_template_directory_uri();?>/assets/icons/insta.png" alt="Instagram icon"/>
+						</a>
+					</li>
+				</ul>
 			</section>
 
 			<section class="col-4">

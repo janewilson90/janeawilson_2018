@@ -898,7 +898,7 @@ form {
 .dark, .site-footer {
   background-color: #2C3E50;
   color: #F9F4F5 !important; }
-  .dark h1, .site-footer h1, .dark h2, .site-footer h2, .dark h3, .site-footer h3, .dark h4, .site-footer h4, .dark h5, .site-footer h5, .dark h6, .site-footer h6, .dark p, .site-footer p {
+  .dark h1, .site-footer h1, .dark h2, .site-footer h2, .dark h3, .site-footer h3, .dark h4, .site-footer h4, .dark h5, .site-footer h5, .dark h6, .site-footer h6, .dark p, .site-footer p, .dark ul, .site-footer ul, .dark li, .site-footer li {
     color: #F9F4F5; }
 
 .fw500 {
@@ -978,3 +978,11 @@ hr {
 
 .cv-element p, .education-element p {
   margin-top: 0; }
+
+.site-footer .social-media-links li {
+  list-style-type: none;
+  display: inline; }
+  .site-footer .social-media-links li img {
+    max-width: 54px; }
+  .site-footer .social-media-links li a {
+    text-decoration: none; }
