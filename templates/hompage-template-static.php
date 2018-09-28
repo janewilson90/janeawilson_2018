@@ -12,7 +12,6 @@ get_header();
       <h2><span class="fw500">UX Analyst specialising in</span> <span id="js-swap">app optimisation, UX analysis, digital transformation</span></h2>
     </div>
     <div class="col-4">
-      <img src=""
       <?php 
         if ( has_post_thumbnail() ) {
           the_post_thumbnail('post-thumbnail', ['class' => 'img-responsive']);

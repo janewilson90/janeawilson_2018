@@ -12,7 +12,6 @@ get_header();
       <h2>UX Analyst <span class="fw500">- Waracle ltd</span></h2>
     </div>
     <div class="col-4">
-      <img src=""
       <?php 
         if ( has_post_thumbnail() ) {
           the_post_thumbnail('post-thumbnail', ['class' => 'img-responsive']);
