@@ -8,7 +8,7 @@ get_header();
 <section class="row">
   <div class="container">
     <div class="col-8">
-      <h1 id="page-title">About me</h1>
+      <h1 id="page-title screen-reader-text">About me</h1>
       <h2>UX Analyst <span class="fw500">- Waracle ltd</span></h2>
     </div>
     <div class="col-4">

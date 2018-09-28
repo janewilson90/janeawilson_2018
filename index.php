@@ -15,19 +15,19 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
+<section class="row">
+	<div class="container">
+		<div class="col-8">
+			<h1 id="page-title"><?php single_post_title(); ?></h1>
+		</div>
+	</div>
+</section>
+
+	<div id="primary" class="content-area container">
 		<main id="main" class="site-main">
 
 		<?php
 		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
 
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -55,5 +55,5 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+
 get_footer();

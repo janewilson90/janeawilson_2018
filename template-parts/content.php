@@ -9,8 +9,8 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+<article id="post-<?php the_ID(); ?>" <?php post_class('row'); ?>>
+	<header class="entry-header col-10">
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -23,7 +23,6 @@
 			<div class="entry-meta">
 				<?php
 				janeawilson_2018_posted_on();
-				janeawilson_2018_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
@@ -33,7 +32,7 @@
 
 	<div class="entry-content">
 		<?php
-		the_content( sprintf(
+		the_excerpt( sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
 				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'janeawilson_2018' ),
