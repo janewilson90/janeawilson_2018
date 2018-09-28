@@ -687,7 +687,8 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   box-sizing: border-box; }
 
 .site-header {
-  background-color: #2C3E50; }
+  background-color: #2C3E50;
+  z-index: 999; }
 
 .main-navigation .menu-header-container #primary-menu {
   text-align: right;
@@ -932,6 +933,11 @@ form {
   width: auto;
   z-index: 100000;
   /* Above WP toolbar. */ }
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%; }
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

@@ -2,6 +2,8 @@ $(function () {
     // $('.main-navigation').stickyNavbar();
     console.log("herro");
 
+    createSticky($("#masthead"));
+
     $("#js-swap").Morphext({
         // The [in] animation type. Refer to Animate.css for a list of available animations.
         animation: "bounceIn",
@@ -15,4 +17,17 @@ $(function () {
     });
     
  });
+
+ function createSticky(sticky) {
+	
+	if (typeof sticky !== "undefined") {
+
+		var	pos = sticky.offset().top,
+				win = $(window);
+			
+		win.on("scroll", function() {
+    		win.scrollTop() >= pos ? sticky.addClass("fixed") : sticky.removeClass("fixed");      
+		});			
+	}
+}
 
