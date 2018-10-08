@@ -9,6 +9,8 @@
 
 ?>
 
+<!-- content.php -->
+
 <article id="post-<?php the_ID(); ?>" <?php post_class('row'); ?>>
 	<header class="entry-header col-10">
 		<?php

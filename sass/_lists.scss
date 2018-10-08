@@ -32,3 +32,12 @@ ol {
 li {
     margin-bottom: 1rem;
 }
+
+.contact-links {
+    list-style: none;
+    li {
+        img {
+            max-width: 54px;
+        }
+    }
+}
