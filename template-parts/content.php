@@ -11,6 +11,12 @@
 
 <!-- content.php -->
 
+<?php
+if ( is_singular() ) { ?>
+  <section class="container">
+<?php } 
+?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class('row'); ?>>
 	<header class="entry-header col-10">
 		<?php
@@ -58,3 +64,9 @@
 		<?php janeawilson_2018_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
+
+<?php
+if ( is_singular() ) { ?>
+  </section>
+<?php } 
+?>

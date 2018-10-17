@@ -5,7 +5,7 @@ Template Name: Static Home
 get_header();
 ?>
 
-<section class="row">
+<section class="row hero-unit">
   <div class="container">
     <div class="col-8">
       <h1 id="page-title screen-reader-text">Hey, I'm Jane</h1>
@@ -37,7 +37,7 @@ get_header();
   <div class="container">
     <div class="col-12">
       <h2>Portfolio</h2>
-      <p>put some things in here - perth archery, auchtermuchty dental, winters computing, variety of waracle projects (no names).</p>
+      <p>At some point - I'll get around to this</p>
     </div>
   </div>
 </section>

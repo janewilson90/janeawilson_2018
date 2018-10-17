@@ -30,8 +30,8 @@ get_header();
         <div class="row">
             <div class="col-6 cv-elements">
                 <?php
-                    if( have_rows('cv_element') ):
-                        while ( have_rows('cv_element') ) : the_row(); ?>
+                    if( have_rows('cv_elements') ):
+                        while ( have_rows('cv_elements') ) : the_row(); ?>
                             <div class="cv-element">
                                 <h3><?php the_sub_field('timeframe'); ?></h3>
                                 <p><?php the_sub_field('position'); ?> - <?php the_sub_field('company');?></p>
@@ -42,7 +42,7 @@ get_header();
                     else :
 
                         // no rows found
-                        echo("shit");
+                        echo("no jobs");
 
                     endif;
                 ?>
@@ -62,7 +62,7 @@ get_header();
                     else :
 
                         // no rows found
-                        echo("shit");
+                        echo("no education");
 
                     endif;
                 ?>
@@ -72,7 +72,7 @@ get_header();
 
         <div class="row">
             <div class="center">
-            <a href="#" class="button button-secondary">Download</a>
+            <a target="_blank" href="https://janeawilson.co.uk/wp-content/uploads/2018/05/JaneWilsonCV_2018.pdf" class="button button-secondary">Download</a>
             </div>
         </div>
 
@@ -83,7 +83,7 @@ get_header();
   <div class="container">
     <div class="col-12">
       <h2>Hobbies & Interests</h2>
-      <small>Redesigning this website 1000 times apparently</small>
+      <small>Rebuilding this website 1000 times apparently</small>
       <p>some things here - fencing, gin, walking, sims3, tv shows about serial killers</p>
     </div>
   </div>
