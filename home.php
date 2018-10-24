@@ -10,9 +10,9 @@
 get_header();
 ?>
 
-<!-- archive.php -->
+<!-- home.php -->
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area container">
 		<main id="main" class="site-main">
 
 		<?php if ( have_posts() ) : ?>

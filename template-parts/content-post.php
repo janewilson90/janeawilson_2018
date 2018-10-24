@@ -41,6 +41,7 @@ if ( is_singular() ) { ?>
 
 	<div class="entry-content">
 		<?php
+		if ( is_singular() ) : 
 		the_content( sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
@@ -53,6 +54,21 @@ if ( is_singular() ) { ?>
 			),
 			get_the_title()
 		) );
+
+		else :
+			the_excerpt( sprintf(
+				wp_kses(
+					/* translators: %s: Name of current post. Only visible to screen readers */
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'janeawilson_2018' ),
+					array(
+						'span' => array(
+							'class' => array(),
+						),
+					)
+				),
+				get_the_title()
+			) );
+		endif;
 
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'janeawilson_2018' ),
