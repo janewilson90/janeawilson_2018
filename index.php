@@ -15,6 +15,8 @@
 get_header();
 ?>
 
+<!--index.php-->
+
 <section class="row">
 	<div class="container">
 		<div class="col-8">
