@@ -706,6 +706,22 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
       line-height: 100px;
       color: #F9F4F5; }
 
+/*mobile*/
+@media screen and (max-width: 480px) {
+  .main-navigation .menu-header-container #primary-menu {
+    text-align: right;
+    list-style: none;
+    margin: 0;
+    padding-left: 0; }
+    .main-navigation .menu-header-container #primary-menu li {
+      padding: 0 15px; }
+      .main-navigation .menu-header-container #primary-menu li a {
+        text-decoration: none;
+        letter-spacing: .075em;
+        display: inline-block;
+        line-height: 100px;
+        color: #F9F4F5; } }
+
 .current-menu-item a {
   color: #BEE9E8 !important; }
 
