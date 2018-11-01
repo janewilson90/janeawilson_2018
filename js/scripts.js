@@ -1,8 +1,4 @@
 $(function () {
-    // $('.main-navigation').stickyNavbar();
-    console.log("herro");
-
-    createSticky($("#masthead"));
 
     $("#js-swap").Morphext({
         // The [in] animation type. Refer to Animate.css for a list of available animations.
@@ -18,16 +14,15 @@ $(function () {
     
  });
 
- function createSticky(sticky) {
-	
-	if (typeof sticky !== "undefined") {
+$(window).scroll(function () {
+    var top_offset = $(window).scrollTop();
+    if (top_offset == 0) {
+        $('#masthead').removeClass('fixed');
+        $('#content').removeClass('content-helper');
+    } else {
+        $('#masthead').addClass('fixed');
+        $('#content').addClass('content-helper');
+    }
+});
 
-		var	pos = sticky.offset().top,
-				win = $(window);
-			
-		win.on("scroll", function() {
-    		win.scrollTop() >= pos ? sticky.addClass("fixed") : sticky.removeClass("fixed");      
-		});			
-	}
-}
 
